@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.context.annotation.Scope;
+
 @Entity
 @Table(name="product")
 public class Product {
@@ -55,5 +57,4 @@ public class Product {
 	public String toString() {
 		return "Product [id=" + id + ", name=" + name + ", desc=" + desc + ", price=" + price + "]";
 	}
-
 }

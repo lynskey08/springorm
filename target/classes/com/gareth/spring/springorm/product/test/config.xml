@@ -13,7 +13,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://www.springframework.org/schema/beans">
 
-	<tx:jta-transaction-manager/>
+	<tx:annotation-driven/>
 
 	<context:component-scan base-package="com.gareth.spring.springorm.product.dao.impl"/>
 
@@ -29,7 +29,7 @@
 	  	<property name="hibernateProperties">
 	  		<props>
 	  			<!-- Generates the sql queries from the objects we provide -->
-	  			<prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQL82Dialect</prop>
+	  			<prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQL94Dialect</prop>
 	  			<!-- displays queries on console that hibernate generates on the fly  -->
 	  			<prop key="hibernate.show_sql">true</prop>
 	  		</props>
@@ -37,9 +37,9 @@
 	  	
 	  	<!-- annotatedClasses bean -->
 	  	<property name="annotatedClasses">
-	  	<list>
-	  		<value>com.gareth.spring.springorm.product.entity.Product</value>
-	  	</list>
+		  	<list>
+		  		<value>com.gareth.spring.springorm.product.entity.Product</value>
+		  	</list>
 	  	</property>
 	 </bean>
 	 
