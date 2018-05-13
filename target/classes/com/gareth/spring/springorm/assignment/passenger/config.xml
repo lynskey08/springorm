@@ -16,7 +16,7 @@
 	<tx:annotation-driven/>
 
 	<context:component-scan
-		base-package="com.gareth.spring.springorm.assignment" />
+		base-package="com.gareth.spring.springorm.assignment.passenger" />
 
 	<!-- DataSource Bean(4 properties) - the bean that creates the connection -->
 	<bean
@@ -35,7 +35,7 @@
 		</property>
 		<property name="annotatedClasses">
 			<list>
-				<value>com.gareth.spring.springorm.assignment.Passenger</value>
+				<value>com.gareth.spring.springorm.assignment.passenger.Passenger</value>
 			</list>
 		</property>
 	</bean>

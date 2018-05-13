@@ -1,18 +1,17 @@
-package com.gareth.spring.springorm.assignment;
+package com.gareth.spring.springorm.assignment.passenger;
 
 
 
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 public class Test {
 	
 	public static void main(String[] args) {
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("com/gareth/spring/springorm/assignment/config.xml");
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("com/gareth/spring/springorm/assignment/passenger/config.xml");
 		PassengerDao passengerDao = (PassengerDao) ctx.getBean("passengerDao");
 //		Passenger passenger = new Passenger();
 //		passenger.setId(5);

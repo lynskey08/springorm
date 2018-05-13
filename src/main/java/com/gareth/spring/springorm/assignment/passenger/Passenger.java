@@ -1,4 +1,4 @@
-package com.gareth.spring.springorm.assignment;
+package com.gareth.spring.springorm.assignment.passenger;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
